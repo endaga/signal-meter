@@ -1,3 +1,7 @@
+Interested in working at Endaga? Check out our [current
+openings](http://www.endaga.com/jobs/), then submit your solution to this
+problem to jobs@endaga.com.
+
 Signal Meter
 ============
 
