@@ -40,14 +40,14 @@ There are lots of complications in this problem, such as:
 To simplify this problem, we're going to be in Grid World. Each phone is driven
 by a trace file under /traces, which has the following format:
 
-# offset, pos_x, pos_y, rssi
-0,10,10,-90
-60,10,10,-85
+    # offset, pos_x, pos_y, rssi
+    0,10,10,-90
+    60,10,10,-85
 
-offset: Time in seconds from start of simulation to send the report
-pos_x: The x position of the phone
-pos_y: The y position of the phone
-rssi:  Received signal strength indication, in dBm
+- offset: Time in seconds from start of simulation to send the report
+- pos_x: The x position of the phone
+- pos_y: The y position of the phone
+- rssi:  Received signal strength indication, in dBm
 
 We assume the BTS is located at 0,0. You are free to attach other meanings to
 these numbers if you want (e.g., you can convert these values to a lat/long if
@@ -61,11 +61,11 @@ modify it to suit what you're building.
 
 The report is a JSON dictionary containing the following relevant fields:
 
-imsi: A unique identifier for the phone (generated randomly each time a Phone
+- imsi: A unique identifier for the phone (generated randomly each time a Phone
       object is created)
-pos_x: The x position of the phone
-pos_y: The y position of the phone
-rssi: Received signal strength, in dBm
+- pos_x: The x position of the phone
+- pos_y: The y position of the phone
+- rssi: Received signal strength, in dBm
 
 To run a single phone, you can run `phone.py traces/phone0.trace`. To run a
 phone for each trace in /traces, just run `sim.bash`.
